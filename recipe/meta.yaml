@@ -1,4 +1,4 @@
-{% set version = '2.62' %}
+{% set version = "2.63" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BDgraph_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BDgraph/BDgraph_{{ version }}.tar.gz
-  sha256: 7e5de4406f4a7873bf948852291d2851a2ab312288467687dd5c0392b2723bac
+  sha256: cc474e1315a04f67fbf14461d35004c899d031c31f18be7d3db076dbf66a0617
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -52,13 +52,10 @@ test:
 about:
   home: https://www.uva.nl/profile/a.mohammadi
   license: GPL-2
-  summary: Statistical tools for Bayesian structure learning in undirected graphical models for
-    continuous, discrete, and mixed data. The package is implemented the recent improvements
-    in the Bayesian graphical models literature, including Mohammadi and Wit (2015)
-    <doi:10.1214/14-BA889>, Mohammadi and Wit (2019) <doi:10.18637/jss.v089.i03>.
+  summary: Statistical tools for Bayesian structure learning in undirected graphical models for continuous, discrete, and mixed data. The package is implemented the recent improvements in the Bayesian graphical models literature, including Mohammadi and Wit (2015) <doi:10.1214/14-BA889>, Mohammadi and Wit (2019) <doi:10.18637/jss.v089.i03>.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
