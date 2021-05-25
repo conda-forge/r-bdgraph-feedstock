@@ -51,7 +51,7 @@ test:
 
 about:
   home: https://www.uva.nl/profile/a.mohammadi
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Statistical tools for Bayesian structure learning in undirected graphical models for continuous, discrete, and mixed data. The package is implemented the recent improvements in the Bayesian graphical models literature, including Mohammadi and Wit (2015) <doi:10.1214/14-BA889>, Mohammadi and Wit (2019) <doi:10.18637/jss.v089.i03>.
   license_family: GPL2
   license_file:
