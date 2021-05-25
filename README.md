@@ -3,7 +3,7 @@ About r-bdgraph
 
 Home: https://www.uva.nl/profile/a.mohammadi
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bdgraph-feedstock/blob/master/LICENSE.txt)
 
