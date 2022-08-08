@@ -1,4 +1,4 @@
-{% set version = "2.67" %}
+{% set version = "2.68" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BDgraph_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BDgraph/BDgraph_{{ version }}.tar.gz
-  sha256: 1f424c9254db3d553f6421b3c095b49c57683d25afefbdb195fed12f0c215268
+  sha256: 35d79abed51ba97468ae50b7fa5814500a3910c190c1e67bf68b418de6fc3dd6
 
 build:
   merge_build_host: true  # [win]
