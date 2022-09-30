@@ -30,19 +30,24 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - libopenblas
     - llvm-openmp                # [osx]
     - _openmp_mutex              # [linux]
     - r-base
+    - r-ggplot2
     - r-igraph
+    - r-proc
   run:
     - libopenblas
     - llvm-openmp                # [osx]
     - _openmp_mutex              # [linux]
     - r-base
     - {{ native }}gcc-libs         # [win]
+    - r-ggplot2
     - r-igraph
+    - r-proc
 
 test:
   commands:
