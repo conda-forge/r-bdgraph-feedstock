@@ -1,4 +1,4 @@
-{% set version = "2.73" %}
+{% set version = "2.74" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BDgraph_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BDgraph/BDgraph_{{ version }}.tar.gz
-  sha256: 90aa89b7f717c10105cf612b5cb7bf40d0c94732cb3bb26e02d42496cbf0c12d
+  sha256: af78a936a8887c4e5521e35356700b903f466ee1796464a2361585efb07814aa
 
 build:
   number: 0
